@@ -3,8 +3,9 @@ const container = document.querySelector('.container');
 const gridSize = 16;
 
 function createGrid(size) {
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 109; i++) {
         const div = document.createElement('div');
+        div.className = 'gridItem';
         // div.style.border = 'thick solid #0000FF';
         container.appendChild(div);
     }
