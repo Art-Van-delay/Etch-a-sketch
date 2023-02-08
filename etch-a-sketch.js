@@ -1,7 +1,7 @@
 const container = document.querySelector('.container');
 
 function createGrid() {
-    for (let i = 0; i < 256; i++) {
+    for (let i = 0; i < 9000; i++) {
         const div = document.createElement('div');
         div.className = 'grid-item';
         div.setAttribute("id", "grid-item");
@@ -17,9 +17,8 @@ createGrid();
 const divs = document.querySelectorAll('.grid-item');
 
 divs.forEach((div) => {
-    div.addEventListener('click', () => {
+    div.addEventListener('mouseover', () => {
         div.style.backgroundColor = "red";
-        alert(div.id);
     })
 });
 
