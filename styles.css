@@ -5,17 +5,20 @@
     width: 10px;
     border-color: black;
     flex: 1;
-    margin: 0;
-    padding: 0;
-    gap: 0;
+    justify-content: center;
 }
 
 .container {
+    justify-content: center;
     display: inline-grid;
     width: 100%;
     height: 100%;
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
-    margin: 0;
-    padding: 0;
-    gap: 0;
+    padding: .1%;
+
+}
+
+.header {
+    justify-content: center;
+    text-align: center;
 }
